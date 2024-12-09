@@ -1,0 +1,86 @@
+header {
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+
+    /* height: 10rem; */
+
+    border-bottom: .1rem solid black;
+}
+
+header .header__wrapper {
+    display: flex;
+
+    /* 
+        - content: dành cho nhiều khối
+        - item: dành cho 1 khối
+    */
+
+    /* 
+        - tạo khoảng cách giữa các flex-item
+        - dùng justify-content vì muốn tạo khoảng cách nhiều khối với nhau. (phụ thuộc vào khoảng cách của nhau)
+    */
+    justify-content: space-between;
+    /* justify-items: ; */
+    /* -------------------- */
+    /* 
+        - canh nằm ngang cho các flex-item đều nhau
+        - dùng align-items vì chỉ muốn canh nội dung của từng khối vào giữa. Không phụ thuộc các khối khác.
+    */
+    align-items: center;
+    /* align-content: ; */
+}
+
+.header__logo {
+    font-size: 3.2rem;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+/* .header__nav a{ */
+
+.header__nav {
+    font-size: 1.7rem;
+}
+
+.header__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.header__nav ul {
+    display: flex;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav li {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.header__nav a {
+    transition: all 0.2s linear;
+
+    /* Giúp trình duyệt render */
+    will-change: color;
+}
+
+/* css cho thẻ a khi được hover */
+.header__nav a:hover {
+    color: red;
+}
+
+/* header:hover a {
+    color: blue;
+} */
+
+/* BT: khi người dùng đưa chuột vào cùng header thì logo chuyển sang màu green */
+
+/* header:hover .header__logo {
+    color: green;
+} */

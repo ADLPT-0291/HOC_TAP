@@ -1,0 +1,78 @@
+h1{
+    background-color: pink;
+}
+h4
+{
+    color: red;
+    font-style: italic;
+    background-color: yellow;
+}
+/* code có mỗi thẻ có class sử dụng thuộc tính sau */
+.highlight{
+    font-style: italic;
+    background-color: #6D24CF;
+    color: #FFE06F;
+}
+.youtobe{
+    color: white;
+    background-color: red;
+    font-style: normal;
+}
+#about{
+    color: blue;
+    background-color: black;
+    font-weight: normal;
+    font-style: normal;
+}
+.about-2{
+    color: red;
+}
+/* selector */
+/* h2{
+    font-weight: normal;
+    font-style: normal;
+} */
+ h5{
+font-size: 50px;
+color: white;
+background-color: black;
+ }
+ /* thay đổi h5 
+cỡ chữ 20 
+chữ màu:  #401d83
+màu nền: #68d69d
+in nghiêng
+không được sửa thẻ selector h5 ở trên
+  */
+.lorem{
+font-size: 20px;
+color: #401d83;
+background-color: #68d69d;
+font-style: italic;
+}
+.center{
+    text-align: center;
+}
+/* kiểm tra element nào có class có lorem vừa có center thành màu đó  */
+.lorem.center {
+    color: red;
+}
+/* kiểm tra element nào có thẻ h5 và class center */
+h5.center{
+    color: blue;
+}
+/* kiểm tra sẽ chọn theo tổng độ ưu tiên của 2 kết hợp */
+
+/*  */
+.lorem-1{
+    color: blue;
+}
+.lorem-2{
+    color: green;
+}
+
+/* chọn những bộ selector
+giống nhau về css */
+.h5,.lorem-1,.lorem-2{
+    font-size: 20px;
+}

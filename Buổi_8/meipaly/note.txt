@@ -1,0 +1,7 @@
+
+https://cybersoft-meipaly.vercel.app/
+font chữ họ đang dùng
+
+
+-src: nơi chúng ta làm việc
+-public: lưu trữ file hình ảnh, mp3, font

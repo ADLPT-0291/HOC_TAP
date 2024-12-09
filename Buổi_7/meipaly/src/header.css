@@ -1,0 +1,68 @@
+header {
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+    /* nếu muốn cố định thì nên dùng heigh thay vì padding */
+    border-bottom: 0.1rem solid black;
+}
+header .header_wrapper {
+    display: flex;
+    /* đuôi content dành cho nhiều khối
+    item dành cho 1 khối */
+    /* tạo khoảng cách giữa các item  
+    dùng justify-content vì muốn tạo khoảng cách nhiều khối với nhau.
+    (Phụ thuộc vào khoảng cách của nhau)*/
+    justify-content: space-between;
+    /* canh nằm ngang cho các flex item dều nhau 
+    dùng align-items vì chỉ muốn canh nội dung của từng khối vào
+    giữa. Không phụ thuộc các khối khác*/
+    align-items: center;
+}
+.header__logo {
+    font-size: 3.2rem;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+.header__nav {
+    font-size: 1.7rem;
+}
+
+.header__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.header__nav ul{
+    display: flex;
+    /* xoá ký hiệu đầu dòng  */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header__nav li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* tạo hiệu ứng đưa vào thì hiệu ứng bị delay theo khoảng 
+thời gian chúng ta setup
+lưu ý luôn đặt trước hover */
+.header__nav a{
+    transition: all 0.2s linear;
+    /* giúp chuyển động animation mượt mà hơn */
+    will-change: color;
+}
+
+/* css cho thẻ a khi đưa vào header thành màu đỏ */
+.header__nav a:hover{
+    color: red;
+}
+/* css cho vùng header đưa vào thì vùng header thành màu vàng
+header:hover a{
+    color: yellow;
+}
+css cho logo đưa vào thì thành màu xanh lá
+header:hover .header__logo{
+    color: green;
+} */

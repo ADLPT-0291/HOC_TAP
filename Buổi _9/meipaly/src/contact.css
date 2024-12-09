@@ -1,0 +1,55 @@
+#contact{
+    padding: 10rem 0;
+}
+.contact__wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.contact__form input,
+.contact__form textarea{
+    width: 100%;
+}
+
+.contact__form input{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact__form input:focus{
+    /* outline không được tính vào kích thước của 1 element , chỉ có full*/
+    /* còn border thì được tính vào kích thước của 1 element, chọn được hướng */
+    outline: 2px solid blue;
+    outline-offset: 5px;
+    border-radius: 5px;
+}
+.contact__form textarea{
+    /* khoá không có kéo ngang  chỉ có kéo dãn theo chiều dọc*/
+    resize: vertical;
+    max-height: 700px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__wrapper iframe,
+.contact__wrapper .contact__form{
+    width: 50%;
+}
+
+
+.contact__form button{
+    /* khoảng các giữa các chữ */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.contact__form:hover button {
+    background-color: red;
+}

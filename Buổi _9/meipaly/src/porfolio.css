@@ -1,0 +1,132 @@
+#porfolio{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.porfolio_top{
+    text-align: center;
+
+}
+.porfolio_sub{
+    font-size: 1.4rem;
+    color: #888888;
+    margin: 0;
+}
+.porfolio_title{
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0;
+}
+.porfolio_desc{
+    color: #888888;
+}
+
+
+/* show case */
+/* Flex */
+/* Grid */
+.porfolio_showcase{
+    display: grid;
+    /* chia mỗi hàng chỉ có 3 cột (element) */
+    /* grid-template-columns: 100px 200px 300px; */
+    /* level 1 */
+    /* grid-template-columns: 33.33% 33.33% 33.33%; */
+
+    /* level 2 */
+    /* grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3); */
+
+    /* level 3 */
+    /* fr: chia tỷ lệ màn hình với grid */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* level 4 */
+    grid-template-columns: repeat(3, 1fr);
+    /* kết hợp với pixel
+    grid-template-columns: repeat(3, 1fr) 100px; */
+
+    /* gap dọc ngang
+    gap: 2rem 3rem */
+    gap: 2rem;
+    
+}
+
+.porfolio_showcase img{
+    /* điều chỉnh độ sáng màu và tương phản */
+    filter: grayscale(100%) contrast(30%);
+}
+.showcase__item{
+    position: relative;
+    height: 40.8rem;
+}
+
+.showcase__overlay{
+    position: absolute;
+    /* thêm thông số cuối rgba để điều chỉnh độ trong suốt */
+    background-color: rgba(230, 43, 74, 0.6);
+    inset: 0;
+    /* mặc định sẽ ẩn đi */
+    /* lưu ý khi dùng animation thì không dùng được display */
+    /* display: none; display: block*/
+    /* tạo mờ */
+    opacity: 0;
+    transition: all 0.5s linear;
+    will-change: opacity;
+}
+
+.showcase__item:hover .showcase__overlay{
+/* hiển thị lên */
+    /* display: block; */
+    /*  */
+    opacity: 1;
+}
+
+.showcase__img{
+    /* ăn height theo thẻ cha */
+    /* ăn khi thẻ cha có xét kích thước height */
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.overlay_zoom{
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    border: none;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 2rem;
+    transform: translateY(2rem);
+    transition: all 0.5s linear;
+    will-change: background, color, transform;
+}
+.showcase__item:hover .overlay_zoom,
+.showcase__item:hover .overlay_content{
+    /* cho về vị trí ban đầu */
+    transform: translateY(0);
+}
+.overlay_zoom:hover{
+    background-color: black;
+    color: white;
+}
+.overlay_content{
+    position: absolute;
+    left: 2.5rem;
+    bottom: 2.5rem;
+    transform: translateY(2rem);
+    transition: all 0.5s linear;
+    will-change: background, transform;
+}
+/* gộp 2 bộ selector có thuộc tính giống nhau dùng dấu phẩy
+cách ở giữa */
+.overlay_content p, 
+.overlay_content h3{
+    margin: 0;
+    /* left: 2.5rem;
+    right: 2.5rem; */
+}
+.overlay_content h3{
+    color: white;
+}
+
+.overlay_content p{
+    color: #D0C7C8;
+}

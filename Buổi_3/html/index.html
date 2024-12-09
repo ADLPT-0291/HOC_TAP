@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <!-- mô ta nội dung trang web để google khi tìm kiếm sẽ đưa trang web bạn ra. Các thông tin mô tả sẽ không hiển thị -->
+    <meta name="description" content="coffee, drink">
+</head>
+<body>
+    <!-- các thuộc tính sẽ được đặt bên trong thẻ mở và cách nhau bằng dấu ; -->
+    <h1 style="text-align: center;background-color: #394A59;
+     color: white; font-family: Oswald-Bold; font-size: small;" >CyberSoft Café</h1>
+<!-- bài tập"
+ tiêu đề shoppe
+ màu nên + màu chữ giống shoppe -->
+ <!-- <h1 style="background-color: #FD5D31; color: white; text-align: center;">
+    Shoppe
+</h1> -->
+<!-- liên kết:
+ Ngoại : oke
+ Nội  -->
+<a href="index.html" target="_blank">Home</a>
+<a href="about.html" target="_blank">About</a>
+ <!-- tạo thêm 1 page contact
+  liên kết index sang contact -->
+<a href="contact.html" target="_blank">Contact</a>
+<!-- Tạo liên kết từ trang about và contact về trang index -->
+ <!-- liên kết trang web với nhau  -->
+<a href="https://www.google.com/imghp?hl=vi&tab=wi" target="_blank">Google</a>
+<!-- bài tập tạo liên kết đến youtobe  -->
+ <!-- target=
+  "_blank" tạo liên kết trang web và mở sang tab khác 
+  "seft" tạo liên kết trang web và không mở tab khác -->
+ <a href="https://www.youtube.com/?app=desktop&hl=vi" target="_blank" >Youtube</a>
+ <!-- thêm liên kết đến nội dung trong trang web nhớ đặt id cho nội dung cần đến -->
+ <a href="#special">Special</a>
+ <a href="#menu">Menu</a>
+ <a href="#talktous">Talk to us</a>
+<!-- Tạo thanh tab ngăn -->
+ <!-- <hr size="3" color="#808080" width="500px"> -->
+ <hr size ="3" color="#808080" width="60%">
+ <!-- px: đơn vị tuyệt đối
+  %: đơn vị tương đối phụ thuộc vào kích thước của màn hình (thẻ cha)-->
+  <h2 style="color: #996633;text-align: center;">About our café</h2>
+<!-- dùng lorem + số từ : sẽ tạo ra đoạn văn bản ngẫu nhiên đúng số từ bạn chọn -->
+  <p style="text-align: end;">
+    <i><b><u>Lorem ipsum dolor</u></b></i> sit amet consectetur adipisicing elit. Id sunt culpa libero, quia, quo eveniet ex, deserunt quas dolor dolore asperiores ratione eos recusandae voluptatem explicabo? Quisquam laboriosam amet autem! <br>
+    <span style="color: #996633; background-color: #394A59;">Lorem</span>ipsum dolor sit amet consectetur adipisicing elit. Doloribus, similique. <br>
+    <i>Lorem ipsum dolor sit amet.</i> <br>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis beatae velit necessitatibus vitae quia sapiente porro? Suscipit, minima quibusdam! <br>
+    <b>Lorem ipsum dolor,</b> sit amet consectetur adipisicing elit. Corrupti consequuntur, praesentium eaque <u>aliquid repellendus magnam!</u> Libero quisquam labore cumque, expedita consequuntur sit, beatae explicabo, cum officiis corrupti accusamus corporis saepe? <br>
+    <!-- 
+    <i></i> in nghiên
+    <b></b> in đậm
+    <u></u> gạch chân
+    <span></span> đánh dấu mỗi nội dung mình muốn đổi style mà vẫn giữ nguyên dòng
+    -->
+  </p>
+<!-- Buổi 2 -->
+<hr size="3" color="#808080" width="50%">
+<h2 style="color: #996633; text-align: center;" id="special">Special Iteml</h2>
+<!-- 
+font-size : initial : in nghiên
+font-weight: 1000 : tăng kích cỡ chữ
+text-decoration: underline : gạch chân chữ
+-->
+<h3 style="font-size: initial; font-weight:1000; text-decoration: underline;">The coffee list 1
+</h3>
+<!-- type trong ul để chỉnh hình dạng ký tự đầu dòng -->
+<!-- <ul type="circle" gần bị xoá> -->
+<!-- stype -->
+<ul style="list-style: circle;">
+  <li style="color:blue;">Black coffee</li>
+  <li style="color:blue">pink coffee</li>
+  <li style="color:blue">Green</li>
+</ul>
+<!-- <img src="../image/chilling-cafe-11.jpg" alt="hello" style="width: 100px;height: 100px;"> -->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWphenrFmicwysLQ7LtQdOxkPkS0EbrcckaA&s" alt="hellô">
+<!-- stype: object-fit: cover giúp căng bức ảnh 
+ ./ đi ra
+ ../ đi vào-->
+<img src="../image/chilling-cafe-11.jpg" alt="hello" width="100px" height="100px" style="display: grid; object-fit: cover;">
+<img src="../image/chilling-cafe-12.jpg" alt="xin chào" width="200px" height="200px" usemap="#map1">
+<map name="map1">
+  <area shape="rect" coords="0,0,100,100" href="./about.html">
+</map>
+
+<h3 style="font-weight:1000">The coffee list 2</h3>
+<!-- <ol></ol> dạng list có thứ tự  
+ type: chọn kiểu định dạng
+ start: chọn bắt đầu từ số mấy -->
+<ol type="I" start="1">
+  <li>Soft Deli Cup</li>
+  <li>Coffee Art</li>
+  <li>Speciality Tea</li>
+</ol>
+<img src="../image/chilling-cafe-13.jpg" alt="hinh"  width="500px" height="500px" style="object-fit: cover;" >
+
+<!-- ---------------------------- -->
+<hr size="3" color="#808080" width="50%">
+<h2 style="text-align: center; color: #996633;" id="menu">Menu</h2>
+<!-- border-collapse gộp viền các ô -->
+<table 
+  border="1px"
+  style="
+  border-collapse: collapse;"
+  align="center"
+>
+  <thead>
+    <tr style="background-color: gray;">
+      <!-- colspan để chiếm 2 cột -->
+      <th colspan="2";>Name</th>
+      <th>Type</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+    <tr>
+      <!-- 
+      background-image: ảnh làm nền 
+      background-position: center; căn giữa hình 
+      tại vì sao dùng background-position tại vì khi căn hình thì không phải hình nào cũng đều như hình vuông 
+      vì vậy cần căn chỉnh về giữa
+      background-size: cover; căn vừa hình theo ô
+      -->
+      <td rowspan="4" 
+      style="background-image:url(../image/chilling-cafe-13.jpg);
+      text-align: center; 
+      color: white;
+      background-position: center;
+      background-size: cover;"
+      >Tradisional Coffee</td>
+      <td rowspan="2">Vietnamese coffee pin</td>
+      <td>Hot</td>
+      <td>60.000</td>
+    </tr>
+
+    <tr>
+      <td>Cold</td>
+      <td>28.000</td> 
+    </tr>
+
+    <tr>
+      <td rowspan="2">milk Coffee</td>
+      <td>Hot</td>
+      <td>38.000</td> 
+    </tr>
+
+    <tr>
+      <td>Cold</td>
+      <td>54.000</td> 
+    </tr>
+
+    <tr>
+      <td rowspan="3" 
+      style="
+      background-image:url(../image/chilling-cafe-12.jpg);
+      text-align: center; 
+      color: white;
+      background-position: center;
+      background-size: cover;
+      ">Expresso</td>
+      <td>American Coffee</td>
+      <td rowspan="3">Hot</td>
+      <td>110.000</td> 
+    </tr>
+
+    <tr>
+      <td>Machiato</td>
+      <td rowspan="2">40.000</td>
+    </tr>
+
+    <tr>
+      <td>Cappuchino</td>
+    </tr>
+  </tbody>
+</table>
+<!--  -->
+<hr size="3" color="#808080" width="50%">
+<h2 style="text-align: center; color: #996633;" id="talktous">Talk to us</h2>
+<p style="text-align: center;">Reach us via
+  <b>
+    Email:
+  </b>
+  <a href="Mailto:lephuoctruong0220@gmail.com">lephuoctruong0220@gmail.com</a>
+  <b>Hotline:</b>
+  <a href="tel:0374 402 31">01234567</a>
+  . Thankyou.
+  <a href="https://youtu.be/zoEtcR5EW08">Youtobe</a>
+</p>
+</body>
+</html>

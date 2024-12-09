@@ -1,0 +1,132 @@
+h4 {
+    font-style: italic;
+    text-decoration: underline;
+    background-color: yellow;
+    color: red;
+}
+
+h1 {
+    color: red;
+}
+
+h1 {
+    background-color: pink;
+}
+
+/* 
+    Code cho mọi thẻ có
+    class là highlight
+*/
+.highlight {
+    font-style: italic;
+    color: #FFE06F;
+    background-color: #6d24cf;
+}
+
+.youtobe {
+    color: white;
+    background-color: rgb(106, 1, 1);
+}
+
+/* 
+    Selector 
+*/
+#about {
+    color: blue;
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+.about-2 {
+    color: red;
+}
+
+
+/* h2 {
+    color: blueviolet;
+
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* Không chỉnh sửa */
+h5 {
+    font-size: 50px;
+    color: white;
+    background-color: black;
+}
+
+/* Không chỉnh sửa */
+
+/* 
+    sửa lại giúp mình
+
+    cỡ chữ: 20
+    chữ màu: #401d83
+    màu nền: #68d69d
+    in nghiêng
+*/
+
+/* 
+    Chuẩn nhất
+    An toàn
+ */
+.h5 {
+    font-size: 20px;
+    color: #401d83;
+    background-color: #68d69d;
+    font-style: italic;
+}
+
+/* h5 {
+    font-size: 20px;
+    color: #401d83;
+    background-color: #68d69d;
+    font-style: italic;
+} */
+
+.left {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+/* 
+    màu đỏ
+ */
+
+.h5.center {
+    color: red;
+}
+
+h5.center {
+    color: blue;
+}
+
+/* 
+[tag][class][id]
+*/
+
+
+
+
+.lorem-1 {
+    color: blue;
+}
+
+.lorem-2 {
+
+    color: green;
+}
+
+/* 
+    chọn những bộ selector giống nhau về css
+*/
+.h5,
+.lorem-1,
+.lorem-2 {
+    font-size: 20px;
+}

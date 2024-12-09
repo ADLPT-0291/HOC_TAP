@@ -1,0 +1,59 @@
+.hero__wrapper {
+
+    background-image: url("../public/img/home_slider.jpg");
+
+    /* viewport height: kích thước chiều height của màn hình */
+    /* vw */
+    height: 100vh;
+
+    /* không cần lặp lại hình để lắp vừa khoảng trống */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero__content {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero__desc {
+    font-size: 2.5rem;
+    margin: 0;
+    word-spacing: .8rem;
+}
+
+.hero__title {
+    font-size: 7.5rem;
+    margin: 0;
+
+    /* 
+    - line-height: chiều cao của 1 dòng
+    - 1.2 * font-size của element đó để ra kích thước height
+    - người ta cũng có thể dùng kích thước cố định để xét line-height: vd: chiều cao của 1 dòng là 80px, 40px, 30px
+    */
+    line-height: 1.2;
+}
+
+.btn__read-more {
+    background-color: #e62b4a;
+    color: white;
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 1rem;
+
+    transition: all 0.2s linear;
+    will-change: background;
+}
+
+.btn__read-more:hover {
+    background-color: #af2239;
+}

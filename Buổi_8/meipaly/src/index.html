@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meipaly</title>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link các file -->
+     <link rel="stylesheet" href="./index.css">
+     <link rel="stylesheet" href="./header.css">
+     <link rel="stylesheet" href="./hero.css">
+     <link rel="stylesheet" href="./service.css">
+     <link rel="stylesheet" href="./porfolio.css">
+     <link rel="stylesheet" href="./news.css">
+     <link rel="stylesheet" href="./number.css">
+     <link rel="stylesheet" href="./experience.css">
+     <link rel="stylesheet" href="./contact.css">
+     <link rel="stylesheet" href="./footer.css">
+     
+
+</head>
+<body>
+    <header>
+        <!-- .container thì tự động sinh ra 1 thẻ div có class là container -->
+        <div class="container">
+            <div class="header_wrapper">
+                <a class="header__logo" href="#">
+                    <i class="fa-brands fa-atlassian"></i>
+                    Meipaly
+                </a>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">showcase</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="hero__wrapper">
+            <div class="hero__content">
+                <p class="hero__desc">WELCOME TO MEIPALY AGENCY</p>
+                <h1 class="hero__title">SMART WEB <br>
+                    DESIGN AGENCY</h1>
+                <button class="hero__btn">READ MORE</button>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="container">
+            <div class="service__top">
+                <p class="service__sub">SERVICES WE ARE OFFERING</p>
+                <h2 class="service__title">WE DESIGN DIGITAL PRODUCTS THAT HELP GROW <br>BUSINESSES.</h2>
+                <p class="service__desc">We are committed to providing our customers with exceptional 
+                    service while offering <br>
+                    our employees the best training.</p>
+            </div>
+            <div class="service__slider">
+                <div class="slick-track">
+                    <div class="item slick-slide">
+                        <i class="fab fa-autoprefixer"></i>
+                        <p>
+                            DIGITAL<br> MARKETING
+                        </p>
+                    </div>
+                    <div class="item slick-slide">
+                        <i class="fab fa-500px"></i>
+                        <p>
+                            SEO &amp; CONTENT <br>WRITING
+                        </p>
+                    </div>
+                    <div class="item slick-slide slick-active">
+                        <i class="fa fa-blog"></i>
+                        <p>
+                            WEBSITE<br>DEVELOPMENT
+                        </p>
+                    </div>
+                    <div class="item slick-slide slick-active">
+                        <i class="fab fa-battle-net"></i>
+                        <p>
+                            SEO &amp; CONTENT <br>WRITING
+                        </p>
+                    </div>
+                    <div class="item slick-slide slick-active">
+                        <i class="fa fa-memory"></i>
+                        <p>
+                            APP MOBILE<br>DEVELOPMENT
+                        </p>
+                    </div>
+                    <div class="item slick-slide slick-cloned slick-active">
+                        <i class="fa fa-dice-d6"></i>
+                        <p>
+                            APP MOBILE<br>DEVELOPMENT
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="porfolio">
+        <div class="container">
+            <div class="porfolio_top">
+                <p class="porfolio_sub">OUR PORTFOLIO</p>
+                <h2 class="porfolio_title">WORK SHOWCASE</h2>
+                <p class="porfolio_desc">We are committed to providing our customers with exceptional service while offering our
+                    employees the best training.</p>
+            </div>
+            <div class="porfolio_showcase">
+                <div class="showcase__item">
+                    <img class="showcase__img" src="/public/img/showcase_img_1.webp" alt="">
+                    <div class="showcase__overlay"></div>
+                </div>
+                <img src="/public/img/showcase_img_2.webp" alt="">
+                <img src="/public/img/showcase_img_3.webp" alt="">
+
+                <img src="/public/img/showcase_img_5.webp" alt="">
+                <img src="/public/img/showcase_img_6.webp" alt="">
+                <img src="/public/img/showcase_img_7.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="new"></section>
+    <section id="numbers"></section>
+    <section id="experience"></section>
+    <section id="contact"></section>
+    <footer></footer>
+</body>
+</html>

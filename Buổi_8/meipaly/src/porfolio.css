@@ -1,0 +1,64 @@
+#porfolio{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.porfolio_top{
+    text-align: center;
+
+}
+.porfolio_sub{
+    font-size: 1.4rem;
+    color: #888888;
+    margin: 0;
+}
+.porfolio_title{
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0;
+}
+.porfolio_desc{
+    color: #888888;
+}
+
+
+/* show case */
+/* Flex */
+/* Grid */
+.porfolio_showcase{
+    display: grid;
+    /* chia mỗi hàng chỉ có 3 cột (element) */
+    /* grid-template-columns: 100px 200px 300px; */
+    /* level 1 */
+    /* grid-template-columns: 33.33% 33.33% 33.33%; */
+
+    /* level 2 */
+    /* grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3); */
+
+    /* level 3 */
+    /* fr: chia tỷ lệ màn hình với grid */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* level 4 */
+    grid-template-columns: repeat(3, 1fr);
+    /* kết hợp với pixel
+    grid-template-columns: repeat(3, 1fr) 100px; */
+
+    /* gap dọc ngang
+    gap: 2rem 3rem */
+    gap: 2rem;
+    
+}
+
+.porfolio_showcase img{
+    /* điều chỉnh độ sáng màu và tương phản */
+    filter: grayscale(100%) contrast(30%);
+}
+.showcase__item{
+    position: relative;
+}
+
+.showcase__overlay{
+    position: absolute;
+    background-color: blue;
+    inset: 0;
+}

@@ -1,0 +1,13 @@
+Định dạng chữ:
+color: màu cho chữ
+text-decoration: kiểu gạch chân
+line-height: chiều cao cho các dòng
+word-spacing: thiết lập khoảng cách giữa các từ.
+letter-spacing: thiết lập khoảng cách giữa các ký tự.
+text-index: thiết lập thụt đầu dòng cho đoạn văn bản
+
+font CSS:
+-font-size: thiết lập kích cỡ chữ.
+-font-weight: thiết lập sự tô đậm của chữ.
+-font-style: thiết lập sự in nghiên của chữ.
+-font-family: thiết lập kiểu chữ.

@@ -1,0 +1,2 @@
+Ctrl +/ : chú thích code
+! + enter: tạo cấu trúc html

@@ -1,0 +1,10 @@
+
+html {
+        /* Nếu như mặc định là 16px */
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+}

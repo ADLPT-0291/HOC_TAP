@@ -1,0 +1,19 @@
+#activities{
+    /* ghi nhanh
+    bgc */
+    background-color: '#FAF4F2';
+    padding: 40px 4px;
+}
+.activities__header{
+    text-align: center;
+
+
+}
+.activities__header p{
+    font-size: 30px;
+    color: #8d8d8d;
+    margin: 0;
+}
+.activities__contents{
+
+}

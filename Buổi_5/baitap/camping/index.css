@@ -1,0 +1,6 @@
+body {
+    /* reset những thuộc tính mặc định của trình duyệt */
+    margin: 0;
+    /* TOàn bộ element đều về font chữ Roboto */
+    font-family:"Roboto";
+}

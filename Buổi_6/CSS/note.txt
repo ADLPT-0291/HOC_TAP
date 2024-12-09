@@ -1,0 +1,11 @@
+Cso 3 dạng CSS
+inline CSS : được ưu tiên cao nhất
+internal CSS: (2) thằng nào đứng sau thì thằng đó được ưu tiên cao hơn.(lưu  phải chung bộ chọn hoặc là selector giống nhau)
+External CSS:(2) thằng nào đứng sau thì thằng đó được ưu tiên cao hơn.(lưu  phải chung bộ chọn hoặc là selector giống nhau)
+độ ưu tiên của selector
+-tag (thẻ):1
+-class:10
+-id: 100
+
+1 elememt có thể nhiều class
+luôn sắp sếp tag -> class -> id

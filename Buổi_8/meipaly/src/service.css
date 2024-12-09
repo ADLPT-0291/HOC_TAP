@@ -1,0 +1,63 @@
+#service{
+    background: black;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.container{
+
+}
+.service__top{
+    text-align: center;
+}
+.service__sub{
+    font-size: 1.6rem;
+    color: rgb(230, 43, 74);
+    margin: 0;
+}
+.service__title{
+    font-size: 5rem;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+}
+.service__desc{
+    margin: 2rem;
+    color: rgb(136, 136, 146);
+}
+
+.slick-track{
+    display: flex;
+    /* tạo khoảng cách giữa các mỗi flex item 
+    gap lưu ý chỉ hoạt động với flex grid */
+    gap: 1rem;
+    /* 
+    context: nội dung con nào vượt quá kích thước cha
+    -hidden:  nội dung con sẽ bị ẩn đi 
+    -auto: thẻ cha sẽ xuất hiện thành thanh scroll */
+    overflow: auto;
+}
+
+.item.slick-slide{
+    background-color: white;
+    text-align: center;
+    color: #888888;
+    width: 50rem;
+    height: 23rem;
+    /* 0: không cho phép bóp icon
+    1: cho phép bóp kích thước icon */
+    flex-shrink: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+.item.slick-slide i {
+    font-size: 5rem;
+}
+
+.item.slick-slide p {
+    font-size: 1.4rem;
+}

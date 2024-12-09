@@ -1,0 +1,31 @@
+#footer{
+    background-color: black;
+    padding: 10rem;
+    color: white;
+}
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social a{
+    text-decoration: none;
+    width: 5.4rem;
+    height: 5.4rem;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    transform: all 0.3s linear;
+    will-change: backround;
+    margin: 1rem;
+    /* chiều cao bằng khoảng cách (lien-height = height để căn vào giữa
+    theo chiều dọc */
+    text-align: center;
+    line-height: 5.4rem;
+}
+
+.footer__social a:hover{
+    background-color: #e62b4a;
+}

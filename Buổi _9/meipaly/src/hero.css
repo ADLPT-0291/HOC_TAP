@@ -1,0 +1,79 @@
+.hero__wrapper{
+    background-image:url("/public/img/home_slider.jpg");
+    /* viewport height:kích thước màn hình chiều dọc */
+    /* vw:  */
+    height: 100vh;
+    /* không cần lặp lại hình để lắp vừa  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__content{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero__desc{
+    font-size: 2.5rem;
+    margin: 0;
+    /* giản cách giữa các từ */
+    word-spacing: .8rem;
+}
+
+.hero__title{
+    font-size: 7.5rem;
+    margin: 0;
+    /* line-height: chiều cao của 1 dòng
+    1.2 *font-size  của elêmnt đó để ra kích thước height
+    người ta cũngcó thể dùng kích thước cố định để xét line-height:display:
+    vd: chiều cao của 1 dòng là 80px, hoặc 40px, 30px */
+    line-height: 1.2;
+}
+
+.hero__btn{
+    background-color: #E62B4A;
+    color: white;
+    padding: 1.5rem 2.5rem;
+    /* chỉnh chữ in hoa hết tất cả các chữ */
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.2s linear;
+    /* giúp chuyển động animation mượt mà hơn */
+    will-change: background;
+}
+
+/* css cho thẻ button khi đưa vào header thành màu đỏ */
+.hero__btn:hover{
+    background-color: #af2239;
+}
+
+
+.more_down{
+    font-size: 3rem;
+    color: white;
+    /* Cách 1  */
+    /* animation-name: more_down;
+    animation-duration: .8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+    /* Cách 2  */
+    animation: more_down .8s linear 1s infinite ;
+}
+
+@keyframes more_down {
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    
+}

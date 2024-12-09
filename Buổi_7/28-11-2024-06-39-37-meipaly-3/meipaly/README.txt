@@ -1,0 +1,2 @@
+- src: nơi chúng ta sẽ làm việc
+- public: lưu trữ file hình ảnh, mp3, font

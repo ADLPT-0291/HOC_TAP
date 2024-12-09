@@ -1,0 +1,25 @@
+#numbers{
+    background-color: black;
+    color: white;
+
+    padding: 10rem 0;
+}
+.number_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.number_item{
+    text-align: center;
+}
+
+.number_item p:nth-child(1){
+    font-size: 6rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.number_item p:nth-child(2){
+    font-size: 2rem;
+    margin: 0;
+}
